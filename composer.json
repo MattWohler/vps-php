@@ -1,15 +1,25 @@
 {
-	"name": "MattWohler/vps-php",
+	"name": "mattwohler/vps-php",
     "description": "A Simple PHP Library for Value Payment Systems.",
+    "type": "library",
     "license": "MIT",
-    "type": "project",
+    "keywords": [
+        "rest",
+        "client",
+        "api",
+        "vps"
+    ],
+    "authors": [{
+        "name": "Matt Wohler",
+        "email": "mattw3@outlook.com"
+    }],
     "require": {
         "php": ">=5.5.9",
         "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
         "psr-4": {
-            "VPS\\": "lib/"
+            "VPS\\": "src/VPS/"
         }
     }
 }
