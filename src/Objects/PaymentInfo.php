@@ -15,9 +15,4 @@ class PaymentInfo extends AbstractObject implements RequestObjectInterface
     {
         return $this->method;
     }
-
-    public function getPayload()
-    {
-        return $this->payload;
-    }
 }
