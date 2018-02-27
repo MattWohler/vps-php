@@ -22,9 +22,14 @@ abstract class AbstractObject
         }, $this);
     }
 
-    public function queryParams(array $params = [])
+    public function setQuery(array $params = [])
     {
         $this->queryParams = $params;
+    }
+
+    public function getQuery()
+    {
+        return $this->$queryParams;
     }
 
     public function getPayload() 

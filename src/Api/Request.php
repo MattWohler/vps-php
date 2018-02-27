@@ -15,7 +15,7 @@ class Request
         try {
             $this->response = $httpClient->request($reqObject->getMethod(), $reqObject->getUrl(), [
                 'json' => $reqObject->getPayload(),
-                'query' => ,
+                'query' => $reqObject->getQuery(),
             ]);
         } catch (\Exception $e) {
             throw $e;
